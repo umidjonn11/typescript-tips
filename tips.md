@@ -133,7 +133,41 @@
   ```typescript
   type ReturnTypeInfer<T> = T extends (...args: any[]) => infer R ? R : never;
   ```
+- **Nominal typing**
+```typescript 
+its when first interface extends the second one 
+```
+- **Structural typing**
+```typescript
+it makes one variable assignable to another without using extends 
+ for example 
+ interface Person{
+  name:string;
+ }
+ let person1={name:"Umid"} 
+ let person2:Person=person1;
+```
 
+- **Difference between type aliases and interfaces**
+## 1.Primitives // we can assign primitives to type but we can't in interfaces for example type Person=string 
+## 2.Extension vs Intersection
+## 3.Declaration merging: // whether can we add more properties after we declare each in interface we can but in type we can't
+## 4.Property conflicts // that means if you did assign string for name in first interface but extend it with the second one and wrote name equals to number it will ccause an error in type on the other hand it will work 
+
+- **Narrowing**
+```typescript 
+its when one type comes to his subtype
+```
+- **Type Guard**
+## 1.Truthiness
+## 2.Equality
+## 3.typeof Operator
+## 4.Instenceof operator // name instance of string
+## 5.in operator
+## 6.assignment operator
+## 7.type predicate
+## 8.exhaustiveness checking and never type 
 ---
+
 
 
