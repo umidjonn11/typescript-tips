@@ -119,15 +119,15 @@
   ```
 - **Index Signatures**
   ```typescript
-  type Dictionary = { [key: string]: number };
+  type Dictionary = { [key: string]: number }; //In TypeScript, an index signature is a way to define the shape of an object when you don't know all the property names in advance, but you do know the types of the values those properties will have
   ```
 - **Mapped Types**
   ```typescript
-  type Optional<T> = { [K in keyof T]?: T[K] };
+  type Optional<T> = { [K in keyof T]?: T[K] }; //indentical to partial typescript buil-in method cuse both of them make properties  optinal
   ```
 - **Conditional Types**
   ```typescript
-  type Check<T> = T extends string ? "String" : "Not a string";
+  type Check<T> = T extends string ? "String" : "Not a string"; // Type Guards Conditional types are useful when designing utility types that depend on input types. Generic Type Transformations You can modify types dynamically based on conditions.
   ```
 - **Infer Keyword**
   ```typescript
