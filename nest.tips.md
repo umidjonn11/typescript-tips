@@ -269,7 +269,17 @@ This repository allows easy interaction with the database.
 
 ```sh
 npm install
+node -v
+npm -v
+npm install -g @nestjs/cli
+nest --version
+nest new my-nest-app
+cd my-nest-app
+npm run start
 npm run start:dev
+
 ```
 
 This guide now provides detailed explanations and examples for a clearer understanding of NestJS.
+
+
